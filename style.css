@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Fraunces:opsz@9..144&family=Montserrat&family=Outfit:wght@500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: hsl(210, 46%, 95%);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-family: Barlow semi Condensed;
+  font-size: 1rem;
+  font-weight: 400;
+}
+h2{
+  font-weight: 700;
+}
+.container{
+  display: flex;
+  gap: 1rem;
+}
+.bg{
+  background-color: hsl(263, 55%, 52%);
+}
+.bg2{
+  background-color: hsl(217, 19%, 35%);
+}
+.bg3{
+ background-color:  hsl(0, 0%, 100%);
+}
+.bg4{
+ background-color: hsl(217, 19%, 35%);
+}
+.bg5{
+ background-color:  hsl(0, 0%, 100%);
+}
+.text1 h2{
+  color: hsl(0, 0%, 100%);
+  font-size: 1em;
+  font-weight: 700;
+}
+.text1 p{
+  color: hsl(0, 0%, 100%, 0.5);
+  font-size: 0.90em;
+  font-weight: 400;
+}
+.text4 h2{
+  color: hsl(217, 19%, 35%);
+  font-size: 1em;
+  font-weight: 700;
+}
+.text4 p{
+  color: hsl(217, 19%, 35%, 0.5);
+  font-size: 0.90em;
+  font-weight: 400;
+}
+.grid{
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4,1fr);
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+}
+.grid-col-span-2{
+  grid-column: span 2;
+}
+.grid-col-span-2{
+  grid-column: span 2;
+}
+.testimonies {
+  font-size: 0.8125em;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(217, 19%, 35%, 0.25);
+}
+.testimonies:last-child{
+  grid-column-start: 4;
+  /*grid-row-start: 1;
+  grid-row-end: 3;*/
+  grid-row: 1/ span 2;
+}
+.testimonies.quote {
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 10%;
+}
+.testimonies img {
+  width: 1.75rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.testimonies.name {
+  font-size: 0.8125em;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.testimonies .position {
+  font-size: 0.6875em;
+  opacity: 0.5;
+}
+
+.testimonies > p:first-of-type {
+  font-size: 1.30em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.testimonies > p:last-of-type {
+  opacity: 0.7;
+}
+footer{
+  text-align: center;
+  margin: 1%;
+  color: hsl(217, 19%, 35%);
+}
+/* mobile design*/
+@media screen and (max-width: 765px) {
+  .grid{
+    display: block;
+    gap: 1.05rem;
+  }
+}
